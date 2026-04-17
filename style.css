@@ -1,0 +1,696 @@
+body{
+    margin: 0;
+    background-color:#1E2133;
+    color: #D4D4D4;
+    
+}
+main.accueil{
+
+
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding : 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 30px);
+}
+
+main.accueil p{
+  margin: -40px;
+}
+
+
+
+.menu{
+    position : sticky;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    background: 001829; 
+}
+
+
+
+
+
+.menu ul{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin : 0;
+    padding : 0;
+    background-color: #1E2133;
+
+}
+
+
+.menu li{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    flex: 3;
+
+}
+
+.menu li a{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+
+    height: 30px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+
+    color: grey;
+    display: flex;
+
+}
+
+.menu li + li a{
+  border-left: 1px solid rgba(255,255,255,0.25);
+}
+
+
+
+.menu li a:hover{color: white;;}
+.menu li:active {color: white;;}
+
+.menu li a.active{
+    color: white;
+    font-weight: bolder;
+    border-bottom: 1px solid whitesmoke;
+}
+
+
+
+h1{
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding : 0 16px;
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 3.5em;
+}
+
+
+.test{
+    margin-top: 180px;
+}
+
+p.about1{
+    max-width: 56ch;
+    text-align: justify;
+    margin : 0 auto;
+    padding: 0 16px;
+    font-size: 1.5em;
+ 
+}
+
+p.about4{
+    text-align:left;
+    max-width: 65ch;
+    margin-left: 20px;
+    font-size: 1.5rem;
+    
+    
+   
+}
+
+hr{
+    width: 50%;
+}
+
+h2.about2{
+    text-align: left;
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+
+}
+
+
+
+ul.about3 li{
+    list-style: none;
+   margin : 0;
+   font-size: 1.5em;
+  
+}
+ul.about3{
+    margin : 0;
+    padding-left: 20px;
+    
+}
+
+.about_div{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 64px;                
+  padding: 0 80px;           
+  margin-top: 32px;
+  margin-left: 10%;
+}
+
+.about_div section{
+  max-width: 40ch;           
+}
+
+
+.about_div p.about4,
+.about_div h2.about2,
+.about_div ul.about3{
+  max-width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.fa-solid.fa-phone {
+    margin-right: 8px;
+}
+.fa-solid.fa-envelope{
+    margin-right: 8px;
+}
+
+
+
+.fa-solid.fa-plane-departure{
+    margin-right: 8px;
+    color: whitesmoke;
+}
+.fa-solid.fa-plane-departure:hover{
+   color : #71BFAF
+}
+
+
+.fa-solid.fa-gamepad{
+    margin-right: 8px;
+}
+.fa-solid.fa-gamepad:hover{
+    color: #71BFAF;
+}
+
+
+
+
+.fa-solid.fa-table-tennis-paddle-ball{
+    margin-right: 8px;
+}
+.fa-solid.fa-table-tennis-paddle-ball:hover{
+    color: #71BFAF;
+}
+
+
+
+.fa-solid.fa-palette{
+    margin-right: 8px;
+}
+.fa-solid.fa-palette:hover{
+    color: #71BFAF;
+}
+
+::selection{
+    background-color: #71BFAF;
+    color: white;
+}
+
+
+.fa-brands.fa-linkedin:hover{
+   color : #71BFAF
+}
+.fa-brands.fa-linkedin{
+  font-size: 48px;
+}
+
+.fa-brands.fa-brands.fa-square-github:hover{
+    color: #71BFAF;
+}
+.fa-brands.fa-square-github{
+  font-size: 48px;
+}
+
+
+.about_div2{
+  padding: 0 80px;
+  margin-top: 32px;
+  margin-left: 10%;
+
+}
+
+.about_div2 .about2{
+  margin-left: 0;
+}
+
+.icones{
+  display: flex;
+     gap: 64px;
+ 
+}
+
+.icones i{
+  font-size: 1.5em;
+}
+
+
+
+.tab{ display: none; }
+
+
+.photos-voyage{ display: none; margin-top: 24px; }
+
+
+#tab-voyage:checked ~ .photos .photos-voyage{ display: block; }
+
+
+#tab-voyage:checked ~ .photos .photos-voyage { display: block; }
+
+.photos{ margin-top: 24px; }
+
+.icones label{
+  display: inline-flex;
+  padding: 8px;
+}
+
+#tab-voyage:checked ~ .icones label[for="tab-voyage"] i{
+  color: #71BFAF;
+}
+#tab-sport:checked ~ .icones label[for="tab-sport"] i{
+  color: #71BFAF;
+}
+#tab-jeux:checked ~ .icones label[for="tab-jeux"] i{
+  color: #71BFAF;
+}
+#tab-dessin:checked ~ .icones label[for="tab-dessin"] i{
+  color: #71BFAF;
+}
+
+
+
+
+.tab{ display: none; }
+
+
+.photos-jeux{ display: none; margin-top: 24px; }
+
+
+#tab-jeux:checked ~ .photos .photos-jeux{ display: block; }
+
+
+#tab-jeux:checked ~ .photos .photos-jeux { display: block; }
+
+
+
+
+
+
+.tab{ display: none; }
+
+
+.photos-sport{ display: none; margin-top: 24px; }
+
+
+#tab-sport:checked ~ .photos .photos-sport{ display: block; }
+
+
+#tab-sport:checked ~ .photos .photos-sport { display: block; }
+
+
+
+
+
+.tab{ display: none; }
+
+
+.photos-dessin{ display: none; margin-top: 24px; }
+
+
+#tab-dessin:checked ~ .photos .photos-dessin{ display: block; }
+
+
+#tab-dessin:checked ~ .photos .photos-dessin { display: block; }
+
+
+
+.photos{
+      display: grid;
+  grid-template-columns: repeat(3, 260px); 
+  gap: 24px;
+  align-items: start;
+}
+
+.photos img{
+  width: 220px;      
+  height: 150px;    
+  object-fit: cover; 
+  border-radius: 8px;
+  
+}
+
+.zoom-dezoom{ display:none; }
+
+
+.photo_voyage1 img{
+  width: 260px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: zoom-in;
+}
+
+
+.photos-voyage .zoom-dezoom:checked ~ .test42,
+.photos-jeux .zoom-dezoom:checked ~ .test42,
+.photos-sport .zoom-dezoom:checked ~ .test42,
+.photos-dessin .zoom-dezoom:checked ~ .test42,
+.photo-maquette .zoom-dezoom:checked ~ .test42,
+.photo-masque .zoom-dezoom:checked ~ .test42{
+  display: flex;
+}
+
+
+.test42{
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);    
+  z-index: 9999;
+  cursor: zoom-out;
+  padding: 10px;            
+}
+
+.test42 img{
+  width: calc(100vw - 32px);
+  height: calc(100vh - 32px);
+  max-width: auto;           
+  max-height: auto;          
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+#tooltip{
+    background-color: #1D222B;
+    backdrop-filter: blur(8px);
+    --webkit-backdrop-filter : blur(8px);
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.3rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    position: fixed;
+    z-index: 1;
+    max-width: 25vw;
+    text-align: justify;
+
+    display: none;
+}
+
+
+.description{
+  margin: 0;             
+}
+
+.description img{
+  display: block;          
+  width: 260px;            
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.description figcaption{
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #D4D4D4;
+  text-align: left;      
+}
+
+
+.video_class {
+  display: grid;
+  align-items: center;
+  gap: 32px;
+  grid-template-columns: auto 1fr;
+
+  max-width: 1100px;  
+  margin: 24px auto;   
+  padding: 0 16px;
+  
+}
+
+video{
+  width: 330px;
+  height: 330px;
+  display: block;
+}
+
+
+
+.maquette img{
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: zoom-in;
+
+}
+
+.projet_about2{
+      text-align: left;
+    margin-left: 25%;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.projet_about4{
+    text-align: left;
+    max-width: 80ch;
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+
+.masque img{
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: zoom-in;
+}
+
+.cv{
+  display: flex;
+  justify-content: center;
+}
+
+.img_cv{
+
+  padding : 24px 16px;
+  max-width: 900px;
+}
+
+a{
+  color: white;
+}
+
+.homepage{
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  font-size: 48px;
+  color: white;
+  
+}
+
+.homepage:hover{
+
+  border-color: #00ffcc;
+  border-radius: 30%;
+  background-color: rgb(0, 192, 163);
+
+}
+
+.link{
+  color: #71BFAF;
+  text-decoration: none;
+  font-weight: bold;
+}
+.link:hover{
+  text-decoration: underline;
+}
+
+.link:hover{
+   color : #71BFAF
+}
+
+
+
+
+
+* { box-sizing: border-box; }
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 1024px){
+
+  h1{
+    font-size: 2.6em;
+  }
+
+  p.about1,
+  p.about4,
+  ul.about3 li{
+    font-size: 1.2em;
+  }
+
+ 
+  .about_div{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+    padding: 0 24px;
+    margin-left: 0;
+  }
+
+  
+  .about_div2{
+    padding: 0 24px;
+    margin-left: 0;
+  }
+
+  
+  .photos{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .photo_voyage1 img,
+  .description img{
+    width: 100%;
+    height: 180px;
+  }
+
+
+  .video_class{
+    grid-template-columns: 1fr;
+  }
+
+  video{
+    width: 100%;
+    height: auto;
+  }
+
+  .projet_about2{
+    margin-left: 0;
+    padding: 0 16px;
+  }
+}
+
+
+@media (max-width: 600px){
+
+  /* Menu : plus compact */
+  .menu li{
+    width: auto;
+    flex: 1;
+  }
+
+  .menu li a{
+    font-size: 1rem;
+    height: 44px; 
+  }
+
+  h1{
+    font-size: 2.1em;
+    margin-top: 24px;
+  }
+
+  p.about1{
+    font-size: 1.1em;
+    padding: 0 14px;
+  }
+
+  p.about4,
+  ul.about3 li{
+    font-size: 1.1em;
+  }
+
+  h2.about2{
+    font-size: 1.5em;
+    margin-left: 0;
+  }
+
+ 
+  .about_div{
+    grid-template-columns: 1fr;
+    padding: 0 14px;
+    margin-left: 0;
+    gap: 24px;
+  }
+
+  .about_div section{
+    max-width: 100%;
+  }
+
+ 
+  .about_div2{
+    padding: 0 14px;
+    margin-left: 0;
+  }
+
+  
+  .icones{
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .icones i{
+    font-size: 1.4em;
+  }
+
+ 
+  .photos{
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .photo_voyage1 img,
+  .description img{
+    height: 200px;
+  }
+
+  
+  #tooltip{
+    max-width: 90vw;
+    font-size: 1.1rem;
+  }
+
+
+  .homepage{
+    font-size: 40px;
+  }
+
+  
+  .projet_about2,
+  .projet_about4{
+    margin-left: 0;
+    padding: 0 14px;
+    max-width: 100%;
+  }
+}
+
